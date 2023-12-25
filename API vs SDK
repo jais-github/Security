@@ -1,0 +1,16 @@
+API(Application Programming Interface) and SDK(Software Devepoment Kit) are essential tools in the software development world, but they serve distinct purpose.
+
+API:
+An API is an is a set of rules and protocols that allows different software applications and services to communcation with each other.
+-> It defines how software components should intract.
+-> Facilitates data exchange and functionality access between software components.
+-> Typically consits of endpoints, requets and responses.[Endpoints, Requests, Response, Parameters]
+
+SDK:
+An SDK is a comprehensive package of tools, libraries, sample code, and documetation that assist developers in building application for a particular platforms, frameworks, or hard ware.
+-> Offers higher-level abstrations, simplifying development for a specific platform.
+-> Tailored to specific platforms or frameworks, ensuring compatibility and optional performance on that platform.
+-> Offer access to advance features and compatibilites specific to the platform, which be otherwise challenging to implement from scratch.
+
+
+** SDk's are preferred choice when building applications that integrate with a specific platform/technology. While APIs are more appropriate for extrating data or performing operation from a specific platform/technology. 

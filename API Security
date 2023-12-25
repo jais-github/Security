@@ -1,0 +1,67 @@
+Below are the concepts that will enhance that API Security:
+- Use HTTPS
+- Use Auth2
+- use Web Authentication
+- Use Leveled API Keys
+- Authorization
+- Rate Limiting
+- APi Versioning 
+- WhiteListing
+- Check OWASI API Security Risks
+- Use API Gateway
+- Error Handling 
+- Input Validation
+
+1. Use HTTPS: Always use HTTPS to encrypt data in transit. This prevent data interception. 
+             Client <---HTTPS---> Server
+
+2. UseAuth2: If your API is meant to be accessed by third-party applications, consider implementing OAuth2.O for secure delefgation of Authorization.
+            User (Resource Owner) --> Authorization Server
+            |
+            v
+            |
+            Client (Third-party App) --> Resource Server
+
+3. Use Web Authentication: It is a modern and robust security standard that can significantly enhance APi Security, particularly enables strong, passwordless, and multifactor authenication, making it valuable addition to your API security strategy.
+            User Device <--> WebAuthn (Browser) <--> Web Server
+
+4. Use of Leveled API keys: It can be a valuable tool in enhancing API security by providing a fine-grained control over access and privileges. They allow you to assign different levels of access to various users or application,
+                            ensuring that each entity can only perform the specific actions for which they are authorized.
+          API Key (Level 1) --> Access to Basic Resources
+          API Key (Level 2) --> Access to Advanced Resources
+
+5. Authorization : Implement proper authorization to restrict what specific users or application can do within the API.
+          Authorized User/Client Accessing Resources       
+
+6. Rate Limiting: Implement rate limiting to prevent abuse or overuse of your API. This can help protect your server from being overwhelmed by too many requests.
+                Design rate limiting rules based on IP, user, action group etc.
+        Client --> API
+           |
+           v
+        Rate-Limiting Controls (e.g., Allow 100 Requests/Minute)
+
+7. API Versioning: It prevents helps in maintaning the stability and security of your APIs as your application evolove. While it may not directly enhance security, 
+                  it indirectly contributes to API security by allowing for controlled and predictable changes.
+        v1 --> Legacy API
+        v2 --> Updated API
+
+8. WhiteListing: It is a security practice that helps enhance API security by explicitly specifying what is allowed, which helps to minimise attacks surfaces and reduce the risk of unauthorized access or malicious activities.
+        Allowed IP Addresses/Entities
+        |
+        v
+      API Server
+
+9. Use API Gateway: Considering using an API gateway that provides security featues like authentication, rate limiting, and logging in a centralized manner. 
+        API Gateway
+         |
+         v
+      APIs (Authentication, Rate Limiting, Logging)
+
+10. Error Handling: Provide generic errors messages to users and log detailed errors on the server side for debugging. 
+        Client <-- Error Message -- API
+
+11. Input Validation: -Sanitize and validate all inputs from external sources to prevents injection attack.
+                      -Use Parameterized queries when interacting with databases to prevent SQL injection.
+        User Input --> Validation --> API
+
+

@@ -1,0 +1,14 @@
+1. what are microservices?
+-> Microservices are a way of designing software applications as a collection of loosely coupled, independently deployable services. 
+Instead of building a monolithic application where all functions are tightly integrated, microservices break down the application into smaller,
+specialized services, each responsible for specific functions or features.
+
+These services communicate with each other typically through APIs (Application Programming Interfaces).
+Each service operates independently and can be developed, deployed, and scaled separately. This approach offers several advantages, including:
+
+Scalability: Services can be scaled individually based on demand, allowing for better resource utilization.
+Flexibility and Agility: Developers can work on different services simultaneously, enabling faster development and updates.
+Resilience: If one service fails, it doesn't necessarily affect the entire system, as other services can continue to function.
+Technology Diversity: Different services can be built using different technologies, allowing teams to choose the best tools for each specific task.
+Easy Maintenance and Upgrades: Updating or making changes to one service doesn't require modifying the entire application.
+
